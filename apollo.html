@@ -24,7 +24,7 @@
     </footer>
     <script type="text/javascript">
       var weatherData = {
-        city: document.querySelector("#city");
+        city: document.querySelector("#city"),
         weather: document.querySelector("#weather"),
         temperature: document.querySelector("#temperature"),
         temperatureValue: 0,
@@ -75,7 +75,15 @@
           xhr.open("GET", "https://fourtonfish.com/tutorials/weather-web-app/getlocationandweather.php?owapikey=51f9cac70b28b2247f98064220f8f233&units=metric", true);
           xhr.send();
         } else {
+          alert("Unable to fetch the location and weather data.")
+        }
 
+        function loadBackground(lat, lon, weatherTag){
+          var script_element = document.createElement("script");
+
+          script_element.src = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=18771fbe9ddcc63578b08ddc1295615e&lat=" + lat + "&lon=" + lon + "&accuracy=1&tags=" + weatherTag + "&sort=relevance&extras=url_l&format=json";
+
+          document.getElementsByTagName("head")[0].appendChild(script_element);
         }
       }
     </script>

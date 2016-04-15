@@ -1,15 +1,15 @@
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  text-shadow: 0 0 10px #000;
-  color: #fff;
-  background: #888;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather Sans',sans-serif;
+	font-size: 3em;
+	text-shadow: 0 0 10px #000;
+	color: #fff;
+	background: #888;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 section {
@@ -38,5 +38,5 @@ footer {
 
 #temperature {
   text-decoration: none;
-  border-bottom: 0.05 em dotted white;
+  border-bottom: 0.05em dotted white;
 }

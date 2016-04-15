@@ -42,6 +42,11 @@
         weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units + ", ";
       }
 
+      function roundTemperature(temperature){
+        temperature = +temperature.toFixed(2);
+        return temperature;
+      }
+
       function getLocationAndWeather(){
         if(window.XMLHttpRequest){
           var xhr = new XMLHttpRequest();

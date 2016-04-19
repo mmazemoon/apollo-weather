@@ -39,11 +39,11 @@
           weatherData.temperatureValue = roundTemperature((weatherData.temperatureValue - 32) * 5/9);
           weatherData.units = "°C";
         }
-        weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units + ", ";
+        weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units;
       }
 
       function roundTemperature(temperature){
-        temperature = +temperature.toFixed(2);
+        temperature = +temperature.toFixed(1);
         return temperature;
       }
 
